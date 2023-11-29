@@ -3,6 +3,9 @@ import pandas as pd
 import geopandas as gpd
 import streamlit.components.v1 as components
 from PIL import Image
+st.sidebar.title("ImedData")
+st.subheader('Análise de Dados Segurança Pública')
+st.sidebar.image("imed.png", width=300)
 
 # Carregue a imagem
 image = Image.open("logo.jpeg")
