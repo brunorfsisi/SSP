@@ -5,7 +5,7 @@ import streamlit.components.v1 as components
 from PIL import Image
 
 # Carregue a imagem
-image = Image.open("/media/brunorg/Acer/fmulher/logo.jpeg")
+image = Image.open("logo.jpeg")
 
 # Redimensione a imagem para 120x150
 resized_image = image.resize((180, 180))
@@ -107,7 +107,7 @@ total_vitimas_por_municipio = total_vitimas_por_municipio.rename(columns={
 # Exibir o DataFrame com o total de vítimas, município, latitude, longitude e código IBGE
 st.write(total_vitimas_por_municipio)
 #st.write(df_merged )
-geojson_path = '/media/brunorg/Acer/fmulher/municipios.geojson.json'
+geojson_path = 'municipios.geojson.json'
 
 # Carregue o arquivo GeoJSON em um DataFrame geográfico
 gdf = gpd.read_file(geojson_path)
